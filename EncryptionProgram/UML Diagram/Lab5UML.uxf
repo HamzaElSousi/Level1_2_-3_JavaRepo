@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>231</x>
+      <y>22</y>
+      <w>528</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+/Encryptable/
+--
+START_CHAR
+END_CHAR
+RANGE
+--
++encrypt(input: String) : String 
++decrypt(input: String) : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>253</x>
+      <y>220</y>
+      <w>253</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>VigenereCipher
+--
+-key: String
+--
++VigenereCipher(password: String) 
++encrypt(input: String): String 
++decrypt(input: String): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>506</x>
+      <y>220</y>
+      <w>253</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>CaesarCipher
+--
+-key: int
+--
++CaeserCipher(shift: int) 
++encrypt(input: String): String 
++decrypt(input: String): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>396</y>
+      <w>396</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>Lab5Test
+--
+-input: Scanner
+-encryptedText: ArrayList&lt;String&gt;
+--
++Lab5test()
++getMenuItem(options: String...): in 
++getString(prompt:String): String
++getInt(prompt:String): int
++main(arg: String) void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>187</x>
+      <y>429</y>
+      <w>132</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>UML designed 
+by
+Hamza El Sousi
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>627</x>
+      <y>176</y>
+      <w>88</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>286</x>
+      <y>176</y>
+      <w>77</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+</diagram>
